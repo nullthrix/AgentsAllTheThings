@@ -5,6 +5,20 @@ machine, fresh opencode install — this folder is everything the agent
 needs to become a full hunting rig. Cross-platform: macOS, Linux,
 Windows (path notation `~/opencode` = `<user home>`/opencode on any OS).
 
+## Quick start
+Prereqs: opencode + node installed; Burp Suite gets installed by hand
+(the agent will ask). Then just give this prompt to opencode:
+
+```
+Clone https://github.com/nullthrix/AgentsAllTheThings into
+~/AgentsAllTheThings (git clone — if git is missing, ask me before
+installing anything). Then bootstrap the hunting rig: read AGENTS.md
+and setup.md inside the cloned folder, resolve <KIT_PATH> to that
+repo root, and follow setup.md phase by phase to the end. Prompt me
+for approval before installing ANY tool, and finish with the
+BOOTSTRAP-REPORT.
+```
+
 ## What's in the folder
 
 | File | What it is |
@@ -19,20 +33,6 @@ Windows (path notation `~/opencode` = `<user home>`/opencode on any OS).
 | payloads.md | Extended payload reference — XSS, SSTI per engine, CRLF, SSI, ESI, text injection, SSRF, CORS, blind-XSS patterns. |
 | templates.md | Artifact formats — scope file, finding file, index row, ledger row, engagement STATE, anomaly register, credentials note. |
 | vrt-matrix.md | Severity map (P1–P5) + web3 exception + pre-close checklist. |
-
-## Quick start
-Prereqs: opencode + node installed; Burp Suite gets installed by hand
-(the agent will ask). Then just give this prompt to opencode:
-
-```
-Clone https://github.com/nullthrix/AgentsAllTheThings into
-~/AgentsAllTheThings (git clone — if git is missing, ask me before
-installing anything). Then bootstrap the hunting rig: read AGENTS.md
-and setup.md inside the cloned folder, resolve <KIT_PATH> to that
-repo root, and follow setup.md phase by phase to the end. Prompt me
-for approval before installing ANY tool, and finish with the
-BOOTSTRAP-REPORT.
-```
 
 ## Models
 Works on ANY model available in opencode — free or paid; nothing in the
