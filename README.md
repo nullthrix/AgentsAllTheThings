@@ -21,15 +21,18 @@ Windows (path notation `~/opencode` = `<user home>`/opencode on any OS).
 | vrt-matrix.md | Severity map (P1–P5) + web3 exception + pre-close checklist. |
 
 ## Quick start
-1. Clone/download this repo anywhere readable on the new machine.
-2. Install opencode + node (prereqs). Burp Suite by hand.
-3. Open opencode INSIDE the repo folder — the root AGENTS.md briefs the
-   agent automatically; say "bootstrap the rig" and it follows setup.md
-   (resolving `<KIT_PATH>` to the repo root by itself). Alternative: paste
-   the prompt from setup.md from any directory. Either way the agent
-   finishes with a BOOTSTRAP-REPORT.
-4. Give it a target — it will demand a scope file first (that's the
-   rules working, not a bug).
+Prereqs: opencode + node installed; Burp Suite gets installed by hand
+(the agent will ask). Then just give this prompt to opencode:
+
+```
+Clone https://github.com/nullthrix/AgentsAllTheThings into
+~/AgentsAllTheThings (git clone — if git is missing, ask me before
+installing anything). Then bootstrap the hunting rig: read AGENTS.md
+and setup.md inside the cloned folder, resolve <KIT_PATH> to that
+repo root, and follow setup.md phase by phase to the end. Prompt me
+for approval before installing ANY tool, and finish with the
+BOOTSTRAP-REPORT.
+```
 
 ## Models
 Works on ANY model available in opencode — free or paid; nothing in the
